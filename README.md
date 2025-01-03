@@ -16,3 +16,7 @@ hash_table_size: restituisce il numero di elementi nella tavola.
 hash_table_keyset: restituisce un array con tutte le chiavi
 
 La tavola hash è stata realizzata utilizzando concatenamento per gestire le collisioni. Ogni bucket è una lista collegata, in cui i nodi memorizzano la chiave e il valore. L'approccio scelto garantisce flessibilità e permette di gestire tipi generici, con l'utente che fornisce funzioni personalizzate per il confronto e l’hashing delle chiavi.
+
+Nonostante i benefici, abbiamo riscontrato alcune limitazioni:
+La necessità di verificare manualmente ogni implementazione per evitare errori logici.
+Iterazioni aggiuntive per migliorare la gestione dinamica della memoria e implementare correttamente tutte le funzionalità richieste.
